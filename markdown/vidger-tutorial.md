@@ -10,7 +10,7 @@
 	* [Preliminary Analsysis](#ia-prelim-analysis)
 	* [DGE Analysis](#ia-dge-analysis)
 
-<br>
+***
 
 ### Accessibility <a id="accessibility"></a>
 ViDGER can be freely accessed directly through (**ADD LINK**) or through R using the following commands:

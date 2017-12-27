@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
-# Title:  Shiny Test 12 - Experimental Designs - Miscellaneous Functions
+# Title:  ViDGER Shiny - Functions
 # Author: Brandon Monier (brandon.monier@sdstate.edu)
-# Date:   12.08.17
+# Date:   12.27.17
 #------------------------------------------------------------------------------
 
 # HOUSE KEEPING FUNCTIONS

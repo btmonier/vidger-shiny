@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
-# Title:  Shiny Test 12 - Experimental Designs - Server Logic
+# Title:  ViDGER Shiny - Server Logic
 # Author: Brandon Monier (brandon.monier@sdstate.edu)
-# Date:   12.08.17
+# Date:   12.27.17
 #------------------------------------------------------------------------------
 
 # Change file upload size to 30 MB and sanitize errors

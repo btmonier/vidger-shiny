@@ -1,13 +1,13 @@
 #------------------------------------------------------------------------------
-# Title:  Shiny Test 12 - Experimental Designs - Application
+# Title:  ViDGER Shiny - Shiny Application
 # Author: Brandon Monier (brandon.monier@sdstate.edu)
-# Date:   12.08.17
+# Date:   12.27.17
 #------------------------------------------------------------------------------
 
 # Package logic ----
 
 ## Set working directory (FOR LOCAL TESTING ONLY)
-# setwd("D:/Box Sync/misc-github-repos/shiny-tests/13-vidger-final")
+# setwd("D:/Box Sync/misc-github-repos/vidger-shiny")
 
 ## CRAN
 source("vidger-functions.R")

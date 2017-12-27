@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
-# Title:  Shiny Test 12 - Experimental Designs - Tabs
+# Title:  ViDGER Shiny - Tabs
 # Author: Brandon Monier (brandon.monier@sdstate.edu)
-# Date:   12.08.17
+# Date:   12.27.17
 #------------------------------------------------------------------------------
 
 # Welcome page ----

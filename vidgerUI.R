@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
-# Title:  Shiny Test 12 - Experimental Designs - User Interface
+# Title:  ViDGER Shiny - User Interface
 # Author: Brandon Monier (brandon.monier@sdstate.edu)
-# Date:   12.08.17
+# Date:   12.27.17
 #------------------------------------------------------------------------------
 
 # Sources ----
@@ -10,8 +10,6 @@ source("tabs.R")
 
 
 # User interface ----
-
-
 vidgerUI <- navbarPage(
 	theme = shinytheme("cerulean"),
 	title = "ViDGER",
