@@ -55,7 +55,7 @@ gene002       6       7       7       8
 gene003       0      34       3      42
 ```
 
-**NOTE:** When loading count data into VIDGER, make sure that the first column is your gene IDs and that sample names are short, concise, and avoid the use of mathematical operaters (`+`, `-`, `/`, `*`, `^`, etc.) and spaces between words. If a space is necessary for legibility, please consider using an underscore (`_`) 
+**NOTE:** When loading count data into VIDGER, make sure that the first column is your gene IDs and that sample names are short, concise, and avoid the use of mathematical operators (`+`, `-`, `/`, `*`, `^`, etc.) and spaces between words. If a space is necessary for legibility, please consider using an underscore (`_`) 
 
 <br>
 
@@ -171,7 +171,9 @@ A volcano plot is another method to visualize gene expression data between two c
 <br>
 
 #### Where can I download a local version of the app? <a id="localapp"></a>
-You can download the lates (*and experimental*) version of the app using this script in an up-to-date version of `R`:
+
+**GitHub**
+You can download the latest (*and experimental*) version of the web application using this script in an up-to-date version of `R`:
 
 ```{r}
 if (!require("shiny")) install.packages("shiny")
@@ -183,7 +185,8 @@ shiny::runGitHub("vidger-shiny", "btmonier")
 #### Where can I download the ViDGER package? <a id="vidgerpackage"></a>
 
 **GitHub**
-You can download the lates (*and experimental*) GitHub repo this web app was based on using this script:
+
+You can download the latest (*and experimental*) GitHub repo this web application was based on using this script:
 
 ```{r}
 if (!require("devtools")) install.packages("devtools")
