@@ -1,7 +1,7 @@
 ## **F**requently **A**sked **Q**uestions
 
 #### Table of Contents
-* [What does VIDGER stand for?](#name)
+* [What does VIDGER stand for?](#vidname)
 * [What web browser(s) can I use?](#web-browser)
 * [What does DEG/DGE mean?](#deg)
 * [What methods does VIDGER use for differential gene expression?](#dgemethod)
@@ -25,7 +25,7 @@
 * [References](#refs)
 
 ***
-#### What does VIDGER stand for? <a id="name"></a>
+#### What does VIDGER stand for? <a id="vidname"></a>
 VIDGER stands for **V**isualization and **I**nterpretation of **D**ifferential **G**ene **E**xpression using **R**. This web application is based off of our prior package [ViDGER](https://github.com/btmonier/vidger) which stands for **Vi**sualization of **D**ifferential **G**ene **E**xpression using **R**
 
 <br>
