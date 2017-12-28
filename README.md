@@ -14,7 +14,7 @@ shiny::runGitHub("vidger-shiny", "btmonier")
 ## Fix list
 
 ```
-Last updated: 2017-12-27 18:55:38 CST
+Last updated: 2017-12-27 19:11:50 CST
 ```
 
 | Task                                | Completed?     |
