@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------
-# Title:  ViDGER Shiny - Server Logic
+# Title:  VIDGER Shiny - Server Logic
 # Author: Brandon Monier (brandon.monier@sdstate.edu)
 # Date:   12.27.17
 #------------------------------------------------------------------------------

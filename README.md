@@ -1,20 +1,20 @@
-# ViDGER Shiny
+# VIDGER Shiny
 
 ## About
-ViDGER (**Vi**sualization of **D**ifferential **G**ene **E**xpression using **R**), is a web-based tool for the analysis of RNA-seq count data. This tool’s purpose is to provide users with a comprehensive and user-friendly method for performing differential gene expression (DGE) analysis regardless of their computational experience. ViDGER also has integrated experimental design options to cater to users with non-traditional DGE requirements, such as interaction terms or paired data. This tool is designed in a way for usable results to be generated in around one minute or for users to invest more time into detailed investigations of their data. ViDGER is a **user-friendly** and **interactive** Shiny app for gene expression analysis. This app takes advantage of several popular DGE tools (*DESeq2*, *edgeR*, and *limma*) available through Bioconductor in conjunction with the Plotly and DataTable API libraries for R. ViDGER also contains an R package which can produce information-rich visualizations for the interpretation of differential gene expression results from three widely-used tools, *Cuffdiff*, *DESeq2*, and *edgeR*.
+VIDGER (**Vi**sualization and **I**nterpretation of **D**ifferential **G**ene **E**xpression using **R**), is a web-based tool for the analysis of RNA-seq count data. This tool’s purpose is to provide users with a comprehensive and user-friendly method for performing differential gene expression (DGE) analysis regardless of their computational experience. VIDGER also has integrated experimental design options to cater to users with non-traditional DGE requirements, such as interaction terms or paired data. This tool is designed in a way for usable results to be generated in around one minute or for users to invest more time into detailed investigations of their data. VIDGER is a **user-friendly** and **interactive** Shiny app for gene expression analysis. This app takes advantage of several popular DGE tools (*DESeq2*, *edgeR*, and *limma*) available through Bioconductor in conjunction with the Plotly and DataTable API libraries for R. VIDGER also contains an R package which can produce information-rich visualizations for the interpretation of differential gene expression results from three widely-used tools, *Cuffdiff*, *DESeq2*, and *edgeR*.
 
 ## Local installation
 To run the the application locally, you can install the `shiny` package in **R**, and use the function `runGithub()`:
 
 ``` r
-if (!require('shiny')) install.packages("shiny")
+if (!require("shiny")) install.packages("shiny")
 shiny::runGitHub("vidger-shiny", "btmonier")
 ```
 
 ## Fix list
 
 ```
-Last updated: 2017-12-27 17:38:46 CST
+Last updated: 2017-12-27 18:37:55 CST
 ```
 
 | Task                                | Completed?     |
@@ -23,8 +23,8 @@ Last updated: 2017-12-27 17:38:46 CST
 | Add DEG Analysis to "Submit"        | X              |
 | Add scatter plots to "Submit"       | X              |
 | Add static images                   | X              |
-| Sumbit ViDGER to Bioconductor       |                |
-| Add FAQ with ViDGER down link       | In progress... |
+| Sumbit VIDGER to Bioconductor       |                |
+| Add FAQ with VIDGER down link       | In progress... |
 | System info                         | X              |
 | Fix axis issues (histogram)         | X              |
 | Add DEG overview                    | X              |

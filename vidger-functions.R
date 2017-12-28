@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------
-# Title:  ViDGER Shiny - Functions
+# Title:  VIDGER Shiny - Functions
 # Author: Brandon Monier (brandon.monier@sdstate.edu)
 # Date:   12.27.17
 #------------------------------------------------------------------------------
@@ -841,21 +841,3 @@ trubble <- function(cts) {
   }
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
