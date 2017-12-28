@@ -25,9 +25,10 @@
 * [References](#refs)
 
 ***
-#### What does VIDGER stand for? (#name)
-VIDGER stands for **V**isualization and **Interpretation** of **Differential** **Gene** **Expression** using **R**. This web application is based off of our prior package [ViDGER](https://github.com/btmonier/vidger) which stands for **Vi**sualization of **D**ifferential **G**ene **E**xpression using **R**
+#### What does VIDGER stand for? <a id="name"></a>
+VIDGER stands for **V**isualization and **I**nterpretation of **D**ifferential **G**ene **E**xpression using **R**. This web application is based off of our prior package [ViDGER](https://github.com/btmonier/vidger) which stands for **Vi**sualization of **D**ifferential **G**ene **E**xpression using **R**
 
+<br>
 
 #### What web browser(s) can I use? <a id="web-browser"></a>
 VIDGER has been properly tested on both [Firefox](https://www.mozilla.org/en-US/firefox/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html), so we recommend using either of these browsers.
