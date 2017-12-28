@@ -12,10 +12,12 @@
   Bioinformatics and Mathematical Biosciences Lab  
   *South Dakota State University*
 
-
 * **Mr. Brandon Monier** ([brandon.monier@sdstate.edu](mailto:brandon.monier@sdstate.edu))  
   Department of Biology and Microbiology  
   *South Dakota State University*
+
+* **Dr. Jing Zhao** ([jing.zhao@sanfordhealth.org](mailto:jing.zhao@SanfordHealth.org))  
+  *Sanford Research*
 
 ***
 

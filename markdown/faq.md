@@ -1,9 +1,10 @@
 ## **F**requently **A**sked **Q**uestions
 
 #### Table of Contents
+* [What does VIDGER stand for?](#name)
 * [What web browser(s) can I use?](#web-browser)
 * [What does DEG/DGE mean?](#deg)
-* [What methods does ViDGER use for differential gene expression?](#dgemethod)
+* [What methods does VIDGER use for differential gene expression?](#dgemethod)
 * [What is count data?](#count-mat)
 * [What is metadata?](#metadata)
 * [What do you mean by "filter cutoff"?](#filtercutoff)
@@ -14,17 +15,22 @@
 * [What is MDS?](#mds)
 * [What are heatmaps?](#heatmaps)
 * [What is Biclustering?](#biclustering)
-* [What experimental designs does ViDGER currently allow?](#expdesign)
+* [What experimental designs does VIDGER currently allow?](#expdesign)
 * [What is a Adj. $p$-value cutoff?](#adjpval)
 * [What is a Min. fold change value?](#minlfc)
 * [What is an MA plot?](#maplot)
 * [What is a volcano plot?](#volplot)
+* [Where can I download a local version of the app?](#localapp)
+* [Where can I download the ViDGER package?](#vidgerpackage)
 * [References](#refs)
 
 ***
+#### What does VIDGER stand for? (#name)
+VIDGER stands for **V**isualization and **Interpretation** of **Differential** **Gene** **Expression** using **R**. This web application is based off of our prior package [ViDGER](https://github.com/btmonier/vidger) which stands for **Vi**sualization of **D**ifferential **G**ene **E**xpression using **R**
+
 
 #### What web browser(s) can I use? <a id="web-browser"></a>
-ViDGER has been properly tested on both [Firefox](https://www.mozilla.org/en-US/firefox/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html), so we recommend using either of these browsers.
+VIDGER has been properly tested on both [Firefox](https://www.mozilla.org/en-US/firefox/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html), so we recommend using either of these browsers.
 
 <br>
 
@@ -33,8 +39,8 @@ DEG and DGE simply mean **d**ifferential **e**xpression of **g**enes, and **d**i
 
 <br>
 
-#### What methods does ViDGER use for differential gene expression? <a id="dgemethod"></a>
-ViDGER currently uses [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html), [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html), and [limma](http://bioconductor.org/packages/release/bioc/html/limma.html) (Love et al. 2014; McCarthy et al. 2012; Ritchie et al. 2015; Robinson et al. 2010)
+#### What methods does VIDGER use for differential gene expression? <a id="dgemethod"></a>
+VIDGER currently uses [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html), [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html), and [limma](http://bioconductor.org/packages/release/bioc/html/limma.html) (Love et al. 2014; McCarthy et al. 2012; Ritchie et al. 2015; Robinson et al. 2010)
 
 <br>
 
@@ -48,7 +54,7 @@ gene002       6       7       7       8
 gene003       0      34       3      42
 ```
 
-**NOTE:** When loading count data into ViDGER, make sure that the first column is your gene IDs and that sample names are short, concise, and avoid the use of mathematical operaters (`+`, `-`, `/`, `*`, `^`, etc.) and spaces between words. If a space is necessary for legibility, please consider using an underscore (`_`) 
+**NOTE:** When loading count data into VIDGER, make sure that the first column is your gene IDs and that sample names are short, concise, and avoid the use of mathematical operaters (`+`, `-`, `/`, `*`, `^`, etc.) and spaces between words. If a space is necessary for legibility, please consider using an underscore (`_`) 
 
 <br>
 
@@ -63,7 +69,7 @@ sample3   treated  24h
 sample4 untreated  24h
 ```
 
-**NOTE 1:** When loading metadata into ViDGER, make sure that the first column is your sample names and that column names and treatment levels are short, concise, and avoid the use of mathematical operators (`+`, `-`, `/`, `*`, `^`, etc.) and spaces between words. If a space is necessary for legibility, please consider using an underscore (`_`) 
+**NOTE 1:** When loading metadata into VIDGER, make sure that the first column is your sample names and that column names and treatment levels are short, concise, and avoid the use of mathematical operators (`+`, `-`, `/`, `*`, `^`, etc.) and spaces between words. If a space is necessary for legibility, please consider using an underscore (`_`) 
 
 **NOTE 2:** Metadata can be expanded to fit the nature of your experiment (i.e. multiple factors can be added). The only thing that must remain consistent between these two matrices, is the sample information. Column names in count data **must** be the same as row names in the metadata.
 
@@ -75,7 +81,7 @@ A "filter cutoff" is a numerical parameter ($n$) will be implemented in your cou
 <br>
 
 #### On the 'Submit and QC' page, what are the transformation methods for counts? <a id="subqctran"></a>
-ViDGER can transform count using the transformation functions from the [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) package (Love et al. 2014). Currently there are four options:
+VIDGER can transform count using the transformation functions from the [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) package (Love et al. 2014). Currently there are four options:
 
 * **Normal log: log2(n + pseudocount)**  
   The most common transformation technique is the logarithm, defined as "Normal log" in the parameters. This is implemented using the following formula:  
@@ -129,12 +135,12 @@ Since this interactive, you can hover over cells for additional information and 
 <br>
 
 #### What is biclustering? <a id="biclustering"></a>
-Biclustering is a clustering technique which allows for clustering of both gene IDs and samples in a count data matrix. Biclustering in ViDGER performs a biclustering analysis using one of the selected biclustering tools with a maximum bicluster size of the indicated cutoff value. 
+Biclustering is a clustering technique which allows for clustering of both gene IDs and samples in a count data matrix. Biclustering in VIDGER performs a biclustering analysis using one of the selected biclustering tools with a maximum bicluster size of the indicated cutoff value. 
 
 <br>
 
-#### What experimental designs does ViDGER currently allow? <a id="expdesign"></a>
-One of the motivations when designing ViDGER was to allow for a variety of commonly used experimental designs employed in RNA-seq experiments. Currently, our application allows for:
+#### What experimental designs does VIDGER currently allow? <a id="expdesign"></a>
+One of the motivations when designing VIDGER was to allow for a variety of commonly used experimental designs employed in RNA-seq experiments. Currently, our application allows for:
 
 * Comparisons between two factor levels (groups) amongst one treatment factor; 
 * Comparisons between level combinations between two treatment factors; 
@@ -163,8 +169,30 @@ A volcano plot is another method to visualize gene expression data between two c
 
 <br>
 
+#### Where can I download a local version of the app? <a id="localapp"></a>
+You can download the lates (*and experimental*) version of the app using this script in an up-to-date version of `R`:
+
+```{r}
+if (!require("shiny")) install.packages("shiny")
+shiny::runGitHub("vidger-shiny", "btmonier")
+```
+
+<br>
+
+#### Where can I download the ViDGER package? <a id="vidgerpackage"></a>
+
+**GitHub**
+You can download the lates (*and experimental*) GitHub repo this web app was based on using this script:
+
+```{r}
+if (!require("devtools")) install.packages("devtools")
+devtools::install_github("btmonier/vidger")
+```
+
+<br>
+
 #### References <a id="refs"></a>
-Love, Michael I., Wolfgang Huber, and Simon Anders. 2014. “Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2.” Genome Biology 15 (12): 550. [http://dx.doi.org/10.1186/s13059-014-0550-8](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8).
+Love, Michael I., Wolfgang Huber, and Simon Anders. 2014. “Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2.” Genome Biology 15 (12): 550.
 
 McCarthy, J. D, Chen, Yunshun, Smyth and K. G (2012). “Differential expression analysis of multifactor RNA-Seq experiments with respect to biological variation.” Nucleic Acids Research, 40(10), pp. 4288-4297.
 

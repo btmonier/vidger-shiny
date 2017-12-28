@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------
-# Title:  ViDGER Shiny - Shiny Application
+# Title:  VIDGER Shiny - Shiny Application
 # Author: Brandon Monier (brandon.monier@sdstate.edu)
 # Date:   12.27.17
 #------------------------------------------------------------------------------
