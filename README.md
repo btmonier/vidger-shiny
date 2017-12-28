@@ -14,7 +14,7 @@ shiny::runGitHub("vidger-shiny", "btmonier")
 ## Fix list
 
 ```
-Last updated: 2017-12-27 18:37:55 CST
+Last updated: 2017-12-27 18:55:38 CST
 ```
 
 | Task                                | Completed?     |
@@ -23,8 +23,8 @@ Last updated: 2017-12-27 18:37:55 CST
 | Add DEG Analysis to "Submit"        | X              |
 | Add scatter plots to "Submit"       | X              |
 | Add static images                   | X              |
-| Sumbit VIDGER to Bioconductor       |                |
-| Add FAQ with VIDGER down link       | In progress... |
+| Sumbit VIDGER to Bioconductor       | In progress... |
+| Add FAQ with VIDGER down link       | X              |
 | System info                         | X              |
 | Fix axis issues (histogram)         | X              |
 | Add DEG overview                    | X              |
