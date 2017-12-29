@@ -34,6 +34,11 @@ tab.submit <- tabPanel(
           "Load my own data." = "no"  
         )
       ),
+      bsTooltip(
+        id = "examplechoice", 
+        title = "Note: if you choose the big example data set, analysis and visualization time will be considerably longer than the small example data set.",
+        placement = "bottom"
+      ),
       uiOutput("file1"),
       uiOutput("file2"),
       br(),
@@ -59,7 +64,7 @@ tab.submit <- tabPanel(
       br(),
       br(),
       p(
-        "After you click 'submit', you may proceed to either the 'Prelinary Analysis' or 'DGE Analysis' tab for additional analyses."
+        "After you click 'submit', you may proceed to either the 'Preliminary Analysis' or 'DGE Analysis' tab for additional analyses."
       )
     ),
     mainPanel(
@@ -366,7 +371,7 @@ tab.sessinfo <- tabPanel(
   sidebarLayout(
     sidebarPanel = NULL,
     mainPanel = mainPanel(
-      h4("R Session Info"),
+      h2("R Session Info"),
       verbatimTextOutput("sessinfo")
     )
   )
