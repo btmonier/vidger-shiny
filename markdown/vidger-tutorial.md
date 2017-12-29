@@ -13,7 +13,7 @@
 ***
 
 ### Accessibility <a id="accessibility"></a>
-VIDGER can be freely accessed directly through (**ADD LINK**) or through R using the following commands:
+VIDGER can be freely accessed directly through [bmbl.sdstate.edu/VIDGER/](http://bmbl.sdstate.edu/VIDGER/) or through R using the following commands:
 
 ```{r}
 if (!require("shiny")) install.packages("shiny")

@@ -4,15 +4,15 @@
 * [What does VIDGER stand for?](#vidname)
 * [What web browser(s) can I use?](#web-browser)
 * [What does DEG/DGE mean?](#deg)
-* [What methods does VIDGER use for differential gene expression?](#dgemethod)
+* [What methods does VIDGER use for differential gene expression?](#dgemethods)
 * [What is count data?](#count-mat)
 * [What is metadata?](#metadata)
 * [What do you mean by "filter cutoff"?](#filtercutoff)
 * [On the 'Submit and QC' page, what are the transformation methods for counts?](#subqctran)
 * [What is a correlation matrix?](#cormatrix)
 * [What is a sample distance matrix?](#sampdistmatrix)
-* [What is PCA?](#pca)
-* [What is MDS?](#mds)
+* [What is PCA?](#vis-pca)
+* [What is MDS?](#vis-mds)
 * [What are heatmaps?](#heatmaps)
 * [What is Biclustering?](#biclustering)
 * [What experimental designs does VIDGER currently allow?](#expdesign)
@@ -40,7 +40,7 @@ DEG and DGE simply mean **d**ifferential **e**xpression of **g**enes, and **d**i
 
 <br>
 
-#### What methods does VIDGER use for differential gene expression? <a id="dgemethod"></a>
+#### What methods does VIDGER use for differential gene expression? <a id="dgemethods"></a>
 VIDGER currently uses [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html), [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html), and [limma](http://bioconductor.org/packages/release/bioc/html/limma.html) (Love et al. 2014; McCarthy et al. 2012; Ritchie et al. 2015; Robinson et al. 2010)
 
 <br>
@@ -118,12 +118,12 @@ Sample correlation matrices are used to determine Euclidean distances between th
 
 <br>
 
-#### What is PCA? <a id="pca"></a>
+#### What is PCA? <a id="vis-pca"></a>
 PCA stands for **P**rincipal **C**omponent **A**nalysis. This statistical technique is used to reduce complex datasets of multiple variables of gene expression to fewer dimensions (plotted on $x$, $y$, or $z$ axes). Generally, for RNA-seq data, it is used to see clustering or grouping amongst sample and their respective treatments. For example, if you have a "treated" and "untreated" conditional levels, you would generally expect samples from each of the levels to group closer together.
 
 <br>
 
-#### What is MDS? <a id="mds"></a>
+#### What is MDS? <a id="vis-mds"></a>
 Similar to PCA, **m**ultiple-**d**imensional **s**caling (MDS) is another grouping technique for samples. Unlike PCA, MDS produces components through non-linear methods for gene expression.
 
 <br>
@@ -173,6 +173,7 @@ A volcano plot is another method to visualize gene expression data between two c
 #### Where can I download a local version of the app? <a id="localapp"></a>
 
 **GitHub**
+
 You can download the latest (*and experimental*) version of the web application using this script in an up-to-date version of `R`:
 
 ```{r}
@@ -186,7 +187,7 @@ shiny::runGitHub("vidger-shiny", "btmonier")
 
 **GitHub**
 
-You can download the latest (*and experimental*) GitHub repo this web application was based on using this script:
+You can download the latest (*and experimental*) GitHub repo this web application was based on using this script in an up-to-date version of `R`:
 
 ```{r}
 if (!require("devtools")) install.packages("devtools")
