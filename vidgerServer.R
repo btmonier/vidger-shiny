@@ -2012,7 +2012,6 @@ vidgerServer <- function(input, output) {
       return()
     } else {
       s <- event_data("plotly_click", source = "heatplot")
-      # source("misc-functions.R")
       rc.data <- counts(ddsout()[[1]])
       test <- getGenes(
         rc.data = rc.data, 
@@ -2459,30 +2458,33 @@ vidgerServer <- function(input, output) {
 
   ## COR - visaulization - correlation matrix (Plotly)
   output$corplot1 <- renderPlotly({
-    if (input$goqc == 0) {
-      return()
-    } else {
-      cor.mat <- corout()[[1]]
-      cor.mat <- as.matrix(cor.mat)
-      tooltips <- paste0(
-        "<b>R:</b> ", round(cor.mat, 3)
-      )
-      tooltips <- matrix(tooltips, ncol = ncol(cor.mat), byrow = FALSE)
-      plot_ly(
-        x = colnames(cor.mat),
-        y = rownames(cor.mat),
-        z = cor.mat,
-        type = "heatmap",
-        text = tooltips,
-        hoverinfo = "text",
-        source = "corplot"
-      ) %>%
-      layout(
-        xaxis = list(title = ""),
-        yaxis = list(title = ""),
-        margin = list(l = 100)
-      )
-    }
+    withProgress(message = "Rendering correlation matrix...", value = 0, {
+      if (input$goqc == 0) {
+        return()
+      } else {
+        incProgress()
+        cor.mat <- corout()[[1]]
+        cor.mat <- as.matrix(cor.mat)
+        tooltips <- paste0(
+          "<b>R:</b> ", round(cor.mat, 3)
+        )
+        tooltips <- matrix(tooltips, ncol = ncol(cor.mat), byrow = FALSE)
+        plot_ly(
+          x = colnames(cor.mat),
+          y = rownames(cor.mat),
+          z = cor.mat,
+          type = "heatmap",
+          text = tooltips,
+          hoverinfo = "text",
+          source = "corplot"
+        ) %>%
+        layout(
+          xaxis = list(title = ""),
+          yaxis = list(title = ""),
+          margin = list(l = 100)
+        )
+      }
+    })
   })
   
   ## COR - DOWNLOAD BUTTON - Corplot1 (pdf)
@@ -2537,29 +2539,32 @@ vidgerServer <- function(input, output) {
     if (input$goqc == 0) {
       return()
     } else {
-      s.cor <- event_data("plotly_click", source = "corplot")
-      cts.tran <- corout()[[2]]
-      cts.tran <- as.data.frame(cts.tran)
-      x <- s.cor[["x"]]
-      y <- s.cor[["y"]]
-      tooltips <- paste0(
-        "<b>ID:</b> ", rownames(cts.tran)
-      )
-      plot_ly(
-        data = cts.tran,
-        type = "scatter",
-        mode = "markers",
-        x = cts.tran[, x],
-        y = cts.tran[, y],
-        text = tooltips,
-        marker = list(size = 2),
-        hoverinfo = "text" 
-      ) %>%
-      layout(
-        title = paste(y, "vs.", x),
-        xaxis = list(title = x),
-        yaxis = list(title = y)
-      )
+      withProgress(message = "Rendering count plot...", value = 0, {
+        incProgress()
+        s.cor <- event_data("plotly_click", source = "corplot")
+        cts.tran <- corout()[[2]]
+        cts.tran <- as.data.frame(cts.tran)
+        x <- s.cor[["x"]]
+        y <- s.cor[["y"]]
+        tooltips <- paste0(
+          "<b>ID:</b> ", rownames(cts.tran)
+        )
+        plot_ly(
+          data = cts.tran,
+          type = "scatter",
+          mode = "markers",
+          x = cts.tran[, x],
+          y = cts.tran[, y],
+          text = tooltips,
+          marker = list(size = 2),
+          hoverinfo = "text" 
+        ) %>%
+        layout(
+          title = paste(y, "vs.", x),
+          xaxis = list(title = x),
+          yaxis = list(title = y)
+        )
+      })
     }
   })
   
@@ -2628,9 +2633,11 @@ vidgerServer <- function(input, output) {
     if (input$goqc == 0) {
       return()
     } else {
-      sampdistPlot(
-        cts = ddstran()[[1]]
-      )
+      withProgress(message = "Rendering distance matrix...", value = 0, {
+        sampdistPlot(
+          cts = ddstran()[[1]]
+        )
+      })
     }
   })
 
