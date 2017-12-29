@@ -14,7 +14,7 @@ shiny::runGitHub("vidger-shiny", "btmonier")
 ## Fix list
 
 ```
-Last updated: 2017-12-27 19:11:50 CST
+Last updated: 2017-12-29 07:19:13 CST
 ```
 
 | Task                                | Completed?     |
@@ -28,6 +28,6 @@ Last updated: 2017-12-27 19:11:50 CST
 | System info                         | X              |
 | Fix axis issues (histogram)         | X              |
 | Add DEG overview                    | X              |
-| Get link available                  | In progress... |
+| Get link available                  | X              |
 | Submit and QC split                 | X              |
 | About us tab                        | X              |
