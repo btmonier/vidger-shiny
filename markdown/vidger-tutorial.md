@@ -45,18 +45,24 @@ Expedited analysis is for users who want a quick and efficient method of produci
 #### Submit and QC <a id="ea-subqc"></a>
 1. Load user data by selecting “Load my own data”
 	* User data requires one count matrix and one condition matrix
+
 2. Click “Submit” to load the data.
 
 	<img src="../img/vid-tut-03.png" alt="Test" style="width: 50%;"/>
 
 3. After submitting the data, proceed to the “DGE Analysis” tab at the top.
 	* If a specific experimental design other than the basic two-group comparison is required, select it accordingly.  
-4. Select the factor of interest and check the boxes for the comparisons of interest.
+
+4. Select the factor of interest and check the boxes for the comparisons of interest.  
+
+	**NOTE:** you must choose at least one comparison for "two-group comparisons" or "multiple factor comparisons" experimental design options or else an error will occur!
+
 5. Submit the parameters to perform DGE analysis.
 
 	<img src="../img/vid-tut-04.png" alt="Test" style="width: 50%;"/>
 
 6. Select the “Plots” subtab to view the DGE results table towards the bottom.
+
 7. Select “Download All Data” at the bottom of this page to download the results file.  
 
 <img src="../img/vid-tut-05.png" alt="Test" style="width: 90%;"/>
@@ -69,8 +75,11 @@ Expedited analysis is for users who want a quick and efficient method of produci
 #### Submit and QC <a id="ia-subqc"></a>
 1. Select either “Start with some example data” to use provided example data or “Load my own data” to upload user data. 
 	* User data requires one count matrix and one condition matrix
+
 2. Select a filter cutoff to simplify and speed computations by eliminating any rows that have below specified expression totals. The default here is 10.
+
 3. Select a transformation method for the count data for displaying the expression estimate.
+
 4. Click “Submit” to submit the two input values or to extract the example data, which provides additional tabs adjacent to the submission box
 
 	<img src="../img/vid-tut-06.png" alt="Test" style="width: 50%;"/>
@@ -130,9 +139,13 @@ After uploading the user data or selecting the example data, users can go direct
 
 1. Experimental Setup allows the user to select an experimental design for their DGE analysis. Options are Two-group comparison, Multiple factor comparisons, Classical interaction design, and Additive models (paired or blocking designs). The Two-group comparison options is the traditional approach for DGE and compares two levels for the selected factor type. **With the example data, selecting “Two group comparisons” for the experimental design and “Rootstock” for the factor allows for specific pairwise comparisons of Rootstock factor levels. Here, we can select specific comparisons of interest from the permutations of all pairwise comparisons. Selecting all comparison options will provide inverse duplications, so specific selections may be needed. Below, all unique pairwise combinations are selected. The linear model is also displayed for users interested in the model used for comparisons.**  
 
+	**NOTE:** you must choose at least one comparison for this experimental design or else an error will occur!
+
 	<img src="../img/vid-tut-20.png" alt="Test" style="width: 90%;"/>  	
 
 	The Multiple factor comparisons design has users select two factor levels and performs all crosswise comparisons for the two chosen factor levels.  **With the example data, the Multiple factor comparisons design with Rootstock and Block selected as the two factors provides optional comparisons for each rootstock separated by block. In this situation, as with the other designs, the user selects which comparisons are of interest. Selecting C3309_B_VS_C3309_E allows for a comparisons of gene expression levels for the same rootstock in two different blocks. This provides insight into the locations and possibly time (due to time requirements for sampling) for this specific rootstock.**  
+
+	**NOTE:** you must choose at least one comparison for this experimental design or else an error will occur!
 
 	<img src="../img/vid-tut-21.png" alt="Test" style="width: 90%;"/>  	
 
