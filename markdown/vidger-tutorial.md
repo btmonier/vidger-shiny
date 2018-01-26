@@ -78,7 +78,7 @@ Expedited analysis is for users who want a quick and efficient method of produci
 
 7. Select “Download All Data” at the bottom of this page to download the results file.  
 
-<img src="../img/vid-tut-05.png" alt="Test" style="width: 90%;"/>
+    <img src="../img/vid-tut-05.png" alt="Test" style="width: 90%;"/>
 
 <br>
 <br>
