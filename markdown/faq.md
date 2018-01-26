@@ -24,24 +24,36 @@
 * [Where can I download the ViDGER package?](#vidgerpackage)
 * [References](#refs)
 
-***
+- - -
+
 #### What does VIDGER stand for? <a id="vidname"></a>
-VIDGER stands for **V**isualization and **I**nterpretation of **D**ifferential **G**ene **E**xpression using **R**. This web application is based off of our prior package [ViDGER](https://github.com/btmonier/vidger) which stands for **Vi**sualization of **D**ifferential **G**ene **E**xpression using **R**
+VIDGER stands for **V**isualization and **I**nterpretation of **D**ifferential
+**G**ene **E**xpression using **R**. This web application is based off of our
+prior package [ViDGER](https://github.com/btmonier/vidger) which stands for
+**Vi**sualization of **D**ifferential **G**ene **E**xpression using **R**
 
 <br>
 
 #### What web browser(s) can I use? <a id="web-browser"></a>
-VIDGER has been properly tested on both [Firefox](https://www.mozilla.org/en-US/firefox/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html), so we recommend using either of these browsers.
+VIDGER has been properly tested on both
+[Firefox](https://www.mozilla.org/en-US/firefox/) and
+[Chrome](https://www.google.com/chrome/browser/desktop/index.html), so we
+recommend using either of these browsers.
 
 <br>
 
 #### What does DEG/DGE mean? <a id="deg"></a>
-DEG and DGE simply mean **d**ifferential **e**xpression of **g**enes, and **d**ifferential **g**ene **e**xpression, respectively.
+DEG and DGE simply mean **d**ifferential **e**xpression of **g**enes, and
+**d**ifferential **g**ene **e**xpression, respectively.
 
 <br>
 
 #### What methods does VIDGER use for differential gene expression? <a id="dgemethods"></a>
-VIDGER currently uses [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html), [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html), and [limma](http://bioconductor.org/packages/release/bioc/html/limma.html) (Love et al. 2014; McCarthy et al. 2012; Ritchie et al. 2015; Robinson et al. 2010)
+VIDGER currently uses
+[DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html),
+[edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html), and
+[limma](http://bioconductor.org/packages/release/bioc/html/limma.html) (Love et
+al. 2014; McCarthy et al. 2012; Ritchie et al. 2015; Robinson et al. 2010)
 
 <br>
 
