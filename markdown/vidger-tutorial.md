@@ -10,24 +10,37 @@
 	* [Preliminary Analsysis](#ia-prelim-analysis)
 	* [DGE Analysis](#ia-dge-analysis)
 
-***
+- - -
 
 ### Accessibility <a id="accessibility"></a>
-VIDGER can be freely accessed directly through [bmbl.sdstate.edu/VIDGER/](http://bmbl.sdstate.edu/VIDGER/) or through R using the following commands:
+VIDGER can be freely accessed directly through
+[bmbl.sdstate.edu/VIDGER/](http://bmbl.sdstate.edu/VIDGER/) or through R using
+the following commands:
 
 ```{r}
 if (!require("shiny")) install.packages("shiny")
 shiny::runGitHub("vidger-shiny", "btmonier")
 ```
 
-Typically, the link will provide an easier route to using VIDGER.  In circumstances where internet connections will be limited (such as during travel), loading VIDGER through R while internet is still available will allow users to utilize VIDGER without an internet connection later on.
+Typically, the link will provide an easier route to using VIDGER.  In
+circumstances where internet connections will be limited (such as during
+travel), loading VIDGER through R while internet is still available will allow
+users to utilize VIDGER without an internet connection later on.
 
 <br>
 
 ### Input Data <a id="input-data"></a>
-VIDGER requires two pieces of information for analysis.  The first is an expression estimation matrix, also referred to as a count matrix, displaying the gene expression estimates for each sample.  The format requires a CSV file with the row names to list the gene IDs and column names to list the sample IDs.  The second required input is a condition matrix, wherein the factor levels for each sample are provided.  This file requires a CSV format and row names to be the sample IDs matching the sample IDs from the expression estimation matrix and the column names to be the condition factors.
+VIDGER requires two pieces of information for analysis.  The first is an
+expression estimation matrix, also referred to as a count matrix, displaying
+the gene expression estimates for each sample.  The format requires a CSV file
+with the row names to list the gene IDs and column names to list the sample
+IDs.  The second required input is a condition matrix, wherein the factor
+levels for each sample are provided.  This file requires a CSV format and row
+names to be the sample IDs matching the sample IDs from the expression
+estimation matrix and the column names to be the condition factors.
 
-The data used for this tutorial are derived from 28 *Vitis vinifera* samples with three distinct factors (Rootstock, row, and block).
+The data used for this tutorial are derived from 28 *Vitis vinifera* samples
+with three distinct factors (Rootstock, row, and block).
 
 **Expression Matrix (first 4 samples IDs):**  
 
